@@ -1,0 +1,21 @@
+<koken:include file="inc/alt-head.html" />
+<koken:include file="inc/essay-masthead.html" />
+
+<div id="page" class="contact white-page">
+	<div class="offcenter">
+		<h2 class="no-mtop">Contact Scott Michael Images</h2>
+
+		<p>Copy about getting in touch about projects, etc. Your eyes can deceive you. Don't trust them. She must have hidden the plans in the escape pod. Send a detachment down to retrieve them, and see to it personally, Commander.</p>
+		
+		<form action="mail.php" method="POST">
+			<ul>
+				<li><label for="name">Name:</label><input type="text" name="name" id="name"></li>
+				<li><label for="email">Email:</label><input type="text" name="email" id="email"></li>
+				<li><label for="message">Message:</label><textarea name="message" id="message" rows="10"></textarea></li>
+				<li><input type="submit" name="submit" value="Send" id="submit"></li>
+			</ul>
+		</form>
+	</div>
+</div>
+
+<koken:include file="inc/alt-footer.html" />

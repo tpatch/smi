@@ -1,0 +1,11 @@
+<koken:include file="inc/alt-head.html" />
+<koken:include file="inc/essay-masthead.html" />
+
+<div id="page" class="about white-page">
+	<div class="offcenter">
+		<h2 class="no-mtop">About</h2>
+		<p>Info here</p>
+	</div>
+</div>
+
+<koken:include file="inc/alt-footer.html" />

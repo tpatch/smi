@@ -1,0 +1,17 @@
+<koken:include file="inc/alt-head.html" />
+<koken:include file="inc/essay-masthead.html" />
+
+<div id="page" class="essays white-page">
+	<koken:load limit="20">
+		<div class="offcenter">
+			<div id="text">
+				<koken:loop>
+					<koken:include file="inc/essay-list.html" />
+				</koken:loop>
+				<koken:include file="inc/pagination.html" />
+			</div>
+		</div>
+	</koken:load>
+</div>
+
+<koken:include file="inc/alt-footer.html" />

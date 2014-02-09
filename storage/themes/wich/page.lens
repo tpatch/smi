@@ -1,0 +1,18 @@
+<koken:include file="inc/alt-head.html" />
+<koken:include file="inc/essay-masthead.html" />
+
+<div id="page" class="custom-page white-page">
+	<koken:load>
+		<div class="offcenter">
+			<ul class="breadcrumbs">
+				<li><a href="/">Home</a></li>
+				<li>&gt;</li>
+				<li>{{ page.title }}</li>
+			</ul>
+			<h2>{{ page.title }}</h2>
+			{{ page.content }}
+		</div>
+	</koken:load>
+</div>
+
+<koken:include file="inc/alt-footer.html" />

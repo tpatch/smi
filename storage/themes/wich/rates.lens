@@ -1,0 +1,82 @@
+<koken:include file="inc/alt-head.html" />
+<koken:include file="inc/rates-masthead.html" />
+
+<div id="page" class="rates">
+	<div class="mainnav uppercase">
+		<a href="/" title="Scott Michael Images"><koken:asset file="css/images/logo.jpg" class="logo" title="Scott Michael Images" /></a>
+		<div class="navcont">
+			<koken:asset file="css/images/camera.png" class="camera" title="Scott Michael Images" />
+			<div class="intro">
+				<ul class="breadcrumbs">
+					<li><a href="/">Home</a></li>
+					<li>&gt;</li>
+					<li>Rates</li>
+				</ul>
+				<h2>So, what do I “get” with  Scott Michael Images?</h2>
+				<p>First, you'll have more fun with me than probably any other photographer in the world. That's a scientific fact. More importantly, 
+				when you work with me, I sign over all <strong>ownership and ©Copyrights to you</strong>. You get everything. Period.</p>
+			</div>
+			<div class="shadow"></div>
+		</div>
+	</div>
+
+	<!-- RATES PAGE --> 
+	<div class="whitestripe uppercase">
+		<div class="offcenter">
+			<p>I shoot the photos, color-correct and resize them to print-quality 5x7 digital files. Then I burn them to a CD for you to print wherever, and as many as you want. Post them digitally wherever you want - they're your photos. You’ll also get a specified number of 11x17, magazine quality retouched digital files of your favorites on another disc– all included in my shoot price. You never pay me for a single print, ever. My prices include everything.</p>
+
+			<h2>Pricing Options</h2>
+
+			<p>Listed below, you’ll find my typical rates for the most common types of shoots I do. Don't see what you're looking for? Just contact me, I shoot everything. My prices don't fit your budget? Again, please contact me, together we'll figure out how to get you what you want within your budget. Any other questions?  Don’t hesitate to contact me with them.</p>
+		</div>
+	</div>
+
+	<div class="pricebar uppercase">
+		<div class="offcenter">
+			<ul>
+				<li id="weddings" class="tab active">Weddings &amp; <wbr />Engagements</li>
+				<li id="families" class="tab">Families/<wbr />Children</li>
+				<li id="portraits" class="tab">Portraits/<wbr />Seniors</li>
+				<li id="corporate" class="tab">Corporate</li>
+				<li id="custom" class="tab">Custom Order/<wbr />Special Request</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="price-detail uppercase">
+		<div class="offcenter">
+			<div class="weddings tabcontent">
+				<koken:include file="inc/rates-weddings.html" />
+			</div>
+			<div class="families tabcontent">
+				<koken:include file="inc/rates-families.html" />
+			</div>
+			<div class="portraits tabcontent">
+				<koken:include file="inc/rates-portraits.html" />
+			</div>
+			<div class="corporate tabcontent">
+				<koken:include file="inc/rates-corporate.html" />
+			</div>
+			<div class="custom tabcontent">
+				<div class="col-2">
+					<koken:asset file="css/images/senior.jpg" class="logo" title="Scott Michael Images" />
+				</div>
+				<div class="col-2 contact">
+					<form action="mail.php" method="POST">
+						<ul>
+							<li><label for="name">Name:</label><input type="text" name="name" id="name"></li>
+							<li><label for="email">Email:</label><input type="text" name="email" id="email"></li>
+							<li><label for="message">Message:</label><textarea name="message" id="message" rows="10"></textarea></li>
+							<li><input type="submit" name="submit" value="Send" id="submit"></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+	</div>
+
+</div>
+
+<koken:include file="inc/alt-footer.html" />

@@ -1,0 +1,56 @@
+	<div class="footer nonfixed">
+		<div class="center">
+			<ul>
+				<li><a href="/rates">Rates</a></li>
+				<li><span>&bull;</span><a href="/about">About</a></li>
+				<li><span>&bull;</span><a href="/contact">Contact SMI</a></li>
+				<li><span>&bull;</span><a href="_review/index.php">Client Portal</a></li>
+				<li><a href="https://www.facebook.com/pages/Scott-Michael-Images/113774741979095" target="_blank" title="Scott Michael Images on Facebook">SMI Facebook</a></li>
+				<li><span>&bull;</span><a href="">Pinterest</a></li>
+				<li><span>&bull;</span><a href="">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+
+	</div> <!-- close #container -->
+
+	<koken:load>
+		<div id="slider" class="preload">
+			<div class="wrap">
+				<ul class="inner">
+					<koken:loop>
+						<li data-index="{{ index }}">
+							<ul>
+								<li><a href="#" target="_new" class="addthis_button_facebook" addthis:url="{{ content.presets.large.url }}" addthis:title="{{ content.title }}" title="Share on Facebook"><koken:asset file="css/images/facebook.png" title="Facebook" /></a></li>
+								<li><a href="#" target="_new" class="addthis_button_twitter" addthis:url="{{ content.presets.large.url }}" addthis:title="{{ content.title }}" title="Share on Twitter"><koken:asset file="css/images/twitter.png" title="Twitter" /></a></li>
+								<li><a href="#" target="_new" class="addthis_button_pinterest_share" addthis:url="{{ content.presets.large.url }}" addthis:title="{{ content.title }}" title="Share on Pinterest"><koken:asset file="css/images/pinterest.png" title="Pinterest" /></a></li>
+							</ul>
+							<koken:img preset="large" lazy="false" data-id="{{ content.id }}" alt="{{ content.caption }}" class="lightbox-image" />
+							<p class="tags">
+								<koken:tags>
+									<koken:loop separator=" ">
+										<a href="/koken/content/tags/{{ tag.title }}">{{ tag.title }}</a>
+									</koken:loop>
+								</koken:tags>
+							</p>
+						</li>
+					</koken:loop>
+				</ul>
+			</div>
+			<div class="controls">
+				<div class="close"></div>
+				<a class="prev-slide control"></a>
+				<a class="next-slide control"></a>
+			</div>
+		</div>
+	</koken:load>
+	
+	<!--<koken:asset file="js/jquery.mousewheel.min.js" />-->
+	<koken:asset file="js/jquerytools.js" />
+	<koken:asset file="js/scripts.js" />
+	<!--<koken:asset file="jquery.pjax.js" common="true" />
+	<koken:asset file="js/boulevard.js" />
+	<koken:asset file="js/tinynav.min.js" />-->
+</body>
+
+</html>

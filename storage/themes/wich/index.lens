@@ -1,0 +1,23 @@
+<koken:include file="inc/head.html" />
+<koken:include file="inc/photos-masthead.html" />
+<koken:include file="inc/header-index.html" />
+
+<koken:load><!--infinite="true"-->
+	<div class="filmstrip">
+		<koken:loop>
+			<a href="{{ content.presets.large.url }}&id={{ content.id }}" class="{{ content.id }}" data-index="{{ index }}"><koken:img respond_to="height" preset="medium" id="{{ content.id }}" alt="{{ content.caption }}" /></a>
+			<!--<div class="hidden">
+				<p class="tags">
+					<koken:tags>
+						<koken:loop separator=", ">
+							<koken:link>{{ tag.title }}</koken:link>
+						</koken:loop>
+					</koken:tags>
+				</p>
+			</div>-->
+		</koken:loop>
+		<div class="clearfix"></div>
+	</div>
+</koken:load>
+
+<koken:include file="inc/footer.html" />

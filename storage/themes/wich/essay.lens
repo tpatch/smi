@@ -1,0 +1,21 @@
+<koken:include file="inc/alt-head.html" />
+<koken:include file="inc/essay-masthead.html" />
+
+<div id="page" class="essays white-page">
+	<koken:load>
+		<div class="offcenter">
+			<div id="text">
+				<ul class="breadcrumbs">
+					<li><a href="/">Home</a></li>
+					<li>&gt;</li>
+					<li><a href="/koken/essays">Essays</a></li>
+					<li>&gt;</li>
+					<li>{{ essay.title }}</li>
+				</ul>
+				<koken:include file="inc/essay-article.html" />
+			</div>
+		</div>
+	</koken:load>
+</div>
+
+<koken:include file="inc/alt-footer.html" />
